@@ -4,7 +4,7 @@ import numpy as np
 def generator(number):
     return np.random.randint(0, 20, size=number)
 
-def valide(list):
+def valider(list):
     valide = []
     nonValide = []
     for i in list:
