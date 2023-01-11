@@ -16,12 +16,12 @@
 
 #### **Etape 2 :** Créer 2 listes vides:
 
-+ valide pour collecter les notes des étudiants ayant validé le module.
++ **`valide`** pour collecter les notes des étudiants ayant validé le module.
 
-+ non_valide pour collecter les notes des étudiants n'ayant pas validé le module.
++ **`non_valide`** pour collecter les notes des étudiants n'ayant pas validé le module.
 
 #### **Etape 3 :** A l'aide de boucle for, de test condtionnel if / elif / else et des méthodes des listes:
 
-+ Affecter les notes qui sont supérieures ou égales à 10 à la liste valide.
++ Affecter les notes qui sont supérieures ou égales à 10 à la liste **`valide`**.
 
-+ Affecter les notes qui sont strictement inférieures à 10 à la liste non_valide.
++ Affecter les notes qui sont strictement inférieures à 10 à la liste **`non_valide`**.
