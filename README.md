@@ -1,4 +1,4 @@
-# Prof MADKOUR TDs
+# TDs du Prof MADKOUR
 
 ## Des structures de contrôle et des structures de données en interaction
 
