@@ -12,7 +12,7 @@
 
 2. On fixe la valeur de la graine (à 0 par exemple): np.random.seed(0)
 
-3. Utiliser la fonction randint pour générer des nombres aléatoires [cliquer ici pour accéder à la documentation](https://numpy.org/doc/stable/reference/random/generated/numpy.random.randint.html#numpy-random-randint){:target="_blank"}
+3. Utiliser la fonction randint pour générer des nombres aléatoires [cliquer ici pour accéder à la documentation](https://numpy.org/doc/stable/reference/random/generated/numpy.random.randint.html#numpy-random-randint/)
 
 #### **Etape 2 :** Créer 2 listes vides:
 
