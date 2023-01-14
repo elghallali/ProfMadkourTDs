@@ -3,7 +3,7 @@ import numpy as np
 
 def generator(number):
     np.random.seed(0)
-    return np.random.randint(0, 20, size=number)
+    return np.random.randint(0, 20, size=number, dtype=float)
 
 def valider(list):
     valide = []
