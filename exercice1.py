@@ -2,6 +2,7 @@
 import numpy as np
 
 def generator(number):
+    np.random.seed(0)
     return np.random.randint(0, 20, size=number)
 
 def valider(list):
