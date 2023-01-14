@@ -3,7 +3,7 @@ import numpy as np
 
 def generator(number):
     np.random.seed(0)
-    return np.random.randint(0, 20, size=number, dtype=float)
+    return np.random.randint(0, 20, size=number, dtype=int)
 
 def valider(list):
     valide = []
@@ -18,8 +18,10 @@ def valider(list):
 
 
 z = generator(100)
-valide, nonValide= valide(z)
-
+valide, nonValide= valider(z)
+print("--------------------------------")
 print(z)
-print(valide)
-print(nonValide)
+print("--------------------------------")
+print("Nalide =" , valide)
+print("--------------------------------")
+print("Non Valide = " ,nonValide)
