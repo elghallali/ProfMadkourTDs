@@ -5,22 +5,22 @@ def generator(number):
     np.random.seed(0)
     return np.random.randint(0, 20, size=number, dtype=int)
 
-def valider(list):
+def valider(notes):
     valide = []
     nonValide = []
-    for i in list:
-        if i >= 10:
-            valide.append(i)
+    for note in notes:
+        if note >= 10:
+            valide.append(note)
         else:
-            nonValide.append(i)
+            nonValide.append(note)
     return valide,nonValide
 
 
 
-z = generator(100)
-valide, nonValide= valider(z)
+notes = generator(100)
+valide, nonValide= valider(notes)
 print("--------------------------------")
-print(z)
+print(notes)
 print("--------------------------------")
 print("Nalide =" , valide)
 print("--------------------------------")
