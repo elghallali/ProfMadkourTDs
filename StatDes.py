@@ -40,7 +40,7 @@ class StatDes:
         sum /= len(self.dataSet)
         if sum < 2.9:
             return f"le coefficient de kurtosis de Pearson = {sum:.4f}\ndonc distribution platykurtique"
-        elif -0.9 <= sum <= 3.1:
+        elif 2.9 <= sum <= 3.1:
             return f"le coefficient de kurtosis de Pearson = {sum:.4f}\ndonc distribution mésokurtique"
         else:
             return f"le coefficient de kurtosis de Pearson = {sum:.4f}\ndonc distribution leptokurtique"
