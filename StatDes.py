@@ -15,28 +15,24 @@ class StatDes:
         return np.sqrt(self.variance())
 
     def asymetrie(self):
-        sum = 0
-        for i in self.dataSet:
-            sum += ((i - self.moyenne()) / self.ecartType())**3
-        sum /= len(self.dataSet)
-        if sum < -0.2:
-            return f"le coefficient de Skewness = {sum:.4f}\ndonc la distribution est asymétrique à gauche"
-        elif -0.2 <= sum <= 0.2:
-            return f"le coefficient de Skewness = {sum:.4f}\ndonc la distribution est symétrique"
+        asy = [((i - self.moyenne()) / self.ecartType())**3 for i in self.dataSet]
+        gamma1 = sum(asy) / len(self.dataSet)
+        if gamma1 < -0.2:
+            return f"le coefficient de Skewness = {gamma1:.4f}\ndonc la distribution est asymétrique à gauche"
+        elif -0.2 <= gamma1 <= 0.2:
+            return f"le coefficient de Skewness = {gamma1:.4f}\ndonc la distribution est symétrique"
         else:
-            return f"le coefficient de Skewness = {sum:.4f}\ndonc la distribution est asymétrique à droite"
+            return f"le coefficient de Skewness = {gamma1:.4f}\ndonc la distribution est asymétrique à droite"
 
     def aplatissement(self):
-        sum = 0
-        for i in self.dataSet:
-            sum += ((i - self.moyenne()) / self.ecartType())**4
-        sum /= len(self.dataSet)
-        if sum < 2.9:
-            return f"le coefficient de kurtosis de Pearson = {sum:.4f}\ndonc distribution platykurtique"
-        elif 2.9 <= sum <= 3.1:
-            return f"le coefficient de kurtosis de Pearson = {sum:.4f}\ndonc distribution mésokurtique"
+        ap =[ ((i - self.moyenne()) / self.ecartType())**4 for i in self.dataSet]
+        beta2 = sum(ap)/len(self.dataSet)
+        if beta2 < 2.9:
+            return f"le coefficient de kurtosis de Pearson = {beta2:.4f}\ndonc distribution platykurtique"
+        elif 2.9 <= beta2 <= 3.1:
+            return f"le coefficient de kurtosis de Pearson = {beta2:.4f}\ndonc distribution mésokurtique"
         else:
-            return f"le coefficient de kurtosis de Pearson = {sum:.4f}\ndonc distribution leptokurtique"
+            return f"le coefficient de kurtosis de Pearson = {beta2:.4f}\ndonc distribution leptokurtique"
 
 
     def __repr__(self):
