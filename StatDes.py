@@ -4,19 +4,21 @@ import numpy as np
 class StatDes:
     def __init__(self, dataSet):
         self.dataSet = dataSet
+        self.len = len(dataSet)
 
     def moyenne(self):
-        return np.mean(self.dataSet)
+        return sum(self.dataSet) / self.len
 
     def variance(self):
-        return np.var(self.dataSet)
+        v = [i**2 for i in self.dataSet]
+        return sum(v)/self.len - self.moyenne()**2
 
     def ecartType(self):
         return np.sqrt(self.variance())
 
     def asymetrie(self):
         asy = [((i - self.moyenne()) / self.ecartType())**3 for i in self.dataSet]
-        gamma1 = sum(asy) / len(self.dataSet)
+        gamma1 = sum(asy) / self.len
         if gamma1 < -0.2:
             return f"le coefficient de Skewness = {gamma1:.4f}\ndonc la distribution est asymétrique à gauche"
         elif -0.2 <= gamma1 <= 0.2:
@@ -26,7 +28,7 @@ class StatDes:
 
     def aplatissement(self):
         ap =[ ((i - self.moyenne()) / self.ecartType())**4 for i in self.dataSet]
-        beta2 = sum(ap)/len(self.dataSet)
+        beta2 = sum(ap) / self.len
         if beta2 < 2.9:
             return f"le coefficient de kurtosis de Pearson = {beta2:.4f}\ndonc distribution platykurtique"
         elif 2.9 <= beta2 <= 3.1:
