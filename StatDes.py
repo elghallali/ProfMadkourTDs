@@ -6,17 +6,10 @@ class StatDes:
         self.dataSet = dataSet
 
     def moyenne(self):
-        sum = 0
-        for i in self.dataSet:
-            sum += i
-        return sum / len(self.dataSet)
+        return np.mean(self.dataSet)
 
     def variance(self):
-        sum = 0
-        for i in self.dataSet:
-            sum += i**2
-        sum /= len(self.dataSet)
-        return sum - self.moyenne()**2
+        return np.var(self.dataSet)
 
     def ecartType(self):
         return np.sqrt(self.variance())
