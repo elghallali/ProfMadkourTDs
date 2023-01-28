@@ -1,4 +1,4 @@
-import numpy as np
+import math
 
 
 class StatDes:
@@ -14,7 +14,7 @@ class StatDes:
         return sum(v)/self.len - self.moyenne()**2
 
     def ecartType(self):
-        return np.sqrt(self.variance())
+        return math.sqrt(self.variance())
 
     def asymetrie(self):
         asy = [((i - self.moyenne()) / self.ecartType())**3 for i in self.dataSet]
