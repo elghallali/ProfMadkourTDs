@@ -28,6 +28,9 @@
 
 ### Exercice Statistique Descriptive
 
+Ecrire une class  qui reçoit comme seul argument une liste de valeurs (de longueur arbitraire) et qui retourne les statistiques descriptives habituelles (moyenne arithmétique, écart type, coefficient d'asymétrie et coefficient d'aplatissement avec une interprétation de ces 2 derniers coefficients).
+
+
 1. **La moyenne :**
 
 ```math
