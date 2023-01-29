@@ -28,44 +28,44 @@
 
 ### Exercice Statistique Descriptive
 
-+ La moyenne:
+1. La moyenne:
 
 ```math
 
 $$\bar{x} = \frac{\sum x_i \times n_i}{n}$$
 ```
 
-+ La variance:
+2. La variance:
 
 ```math
 $$Var = \frac{\sum x_i^2 \times n_i}{n}- \bar{x}^2$$
 
 ```
 
-+ L'écart-type:
+3. L'écart-type:
 
 ```math
 $$\sigma = \sqrt{Var}$$
 
 ```
 
-+ Asymétrie d’une distribution statistique (Coefficient de Skewness)
+4. Asymétrie d’une distribution statistique (Coefficient de Skewness)
 
 
 ```math
 $$\gamma_1 = \frac{1}{n}\sum n_i \left( \frac{x_i -\bar{x}}{\sigma} \right)^3$$
 ```
 
-  - Si $\gamma_1 = 0$: la distribution est symétrique.
-  - Si $\gamma_1 > 0$: la distribution est asymétrique à droite.
-  - Si $\gamma_1 < 0$: la distribution est asymétrique à gauche.
+- Si $\gamma_1 = 0$: la distribution est symétrique.
+- Si $\gamma_1 > 0$: la distribution est asymétrique à droite.
+- Si $\gamma_1 < 0$: la distribution est asymétrique à gauche.
 
-+ Aplatissement d’une distribution statistique (Coefficient de Kurtosis)
+5. Aplatissement d’une distribution statistique (Coefficient de Kurtosis)
 
 ```math
 $$\beta_2 = \frac{1}{n}\sum n_i \left( \frac{x_i -\bar{x}}{\sigma} \right)^4$$
 ```
 
-  - Si $\beta_2 = 3$: distribution mésokurtique (courbe normale).
-  - Si $\beta_2> 3$: distribution leptokurtique (moins aplatie que la normale).
-  - Si $\\beta_2 < 3$: distribution platykurtique (plus aplatie que la normale).
+- Si $\beta_2 = 3$: distribution mésokurtique (courbe normale).
+- Si $\beta_2> 3$: distribution leptokurtique (moins aplatie que la normale).
+- Si $\\beta_2 < 3$: distribution platykurtique (plus aplatie que la normale).
