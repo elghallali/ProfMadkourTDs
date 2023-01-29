@@ -5,16 +5,16 @@ class StatDes:
     # Constructor Method
     def __init__(self, dataSet):
         self.dataSet = dataSet
-        self.len = len(dataSet)
+        self.__len = len(dataSet)
 
     # Mean Method
     def moyenne(self):
-        return sum(self.dataSet) / self.len
+        return sum(self.dataSet) / self.__len
 
     # Variance Method
     def variance(self):
         v = [i**2 for i in self.dataSet]
-        return sum(v)/self.len - self.moyenne()**2
+        return sum(v)/self.__len - self.moyenne()**2
 
     # Standard Deviation Method
     def ecartType(self):
@@ -23,10 +23,10 @@ class StatDes:
     # Skewness Method
     def asymetrie(self):
         asy = [((i - self.moyenne()) / self.ecartType())**3 for i in self.dataSet]
-        gamma1 = sum(asy) / self.len
+        gamma1 = sum(asy) / self.__len
         if gamma1 < -0.2:
             return f"le coefficient de Skewness = {gamma1:.4f}\ndonc la distribution est asymétrique à gauche"
-        elif -0.2 <= gamma1 <= 0.2:
+        elif gamma1 <= 0.2:
             return f"le coefficient de Skewness = {gamma1:.4f}\ndonc la distribution est symétrique"
         else:
             return f"le coefficient de Skewness = {gamma1:.4f}\ndonc la distribution est asymétrique à droite"
@@ -34,10 +34,10 @@ class StatDes:
     # Kurtosis Method
     def aplatissement(self):
         ap =[ ((i - self.moyenne()) / self.ecartType())**4 for i in self.dataSet]
-        beta2 = sum(ap) / self.len
+        beta2 = sum(ap) / self.__len
         if beta2 < 2.9:
             return f"le coefficient de kurtosis de Pearson = {beta2:.4f}\ndonc distribution platykurtique"
-        elif 2.9 <= beta2 <= 3.1:
+        elif beta2 <= 3.1:
             return f"le coefficient de kurtosis de Pearson = {beta2:.4f}\ndonc distribution mésokurtique"
         else:
             return f"le coefficient de kurtosis de Pearson = {beta2:.4f}\ndonc distribution leptokurtique"
