@@ -25,3 +25,16 @@
 + Affecter les notes qui sont supérieures ou égales à 10 à la liste **`valide`**.
 
 + Affecter les notes qui sont strictement inférieures à 10 à la liste **`non_valide`**.
+
+### Exercice Statistique Descriptive
+
++ La moyenne:
+
+```math
+
+$$\bar{x} = \frac{\sum x_i \times n_i}{n}$$
+```
+
++ La variance:
+
+
