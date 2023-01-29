@@ -37,4 +37,16 @@ $$\bar{x} = \frac{\sum x_i \times n_i}{n}$$
 
 + La variance:
 
+```math
+$$Var = \frac{\sum x_i^2 \times n_i}{n}- \bar{x}^2$$
+
+```
+
++ L'écart-type:
+
+```math
+$$\sigma = \sqrt{Var}$$
+
+```
+
 
