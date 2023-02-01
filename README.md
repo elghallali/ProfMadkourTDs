@@ -77,6 +77,7 @@ $$\beta_2 = \frac{1}{n}\sum n_i \left( \frac{x_i -\bar{x}}{\sigma} \right)^4$$
 Créer une fonction « resultats » qui simule les moyennes générales obtenues par les étudiants fictifs d'une
 classe et qui retourne les mentions de ceux qui ont validé le semestre. On suppose que les moyennes générales
 sont des nombres entiers compris entre 0 et 20.
+
 La fonction « resultats » a un seul paramètre: le nombre d'étudiants à simuler (que l’on notera « nombre »), et retourne un dictionnaire « mentions » associant à chaque étudiant sa mention.
 Voici quelques consignes à respecter :
 
