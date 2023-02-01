@@ -115,7 +115,7 @@ classDiagram
         +numImmatriculation : string
         +combustible = diesel : string
         entretenus(): void
-        misRebut() : void
+        misRebut(): void
     }
     Vehicule <|-- TransportPersonnel
     Vehicule <|-- TransportMarchandise
