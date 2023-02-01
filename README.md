@@ -92,7 +92,7 @@ classent parmi ceux qui ont validé ou ceux qui n’ont pas validé le semestre.
 
 obtenue comme suit :
 
-<ul style="margin-left:5px;">
+<ul style="margin-left:50px;">
     <li><strong>Passable</strong> (10 ≤ 𝑛𝑜𝑡𝑒 < 12)</li>
     <li><strong>Assez bien</strong> (12 ≤ 𝑛𝑜𝑡𝑒 < 14)</li>
     <li><strong>Bien</strong> (14 ≤ 𝑛𝑜𝑡𝑒 < 16)</li>
