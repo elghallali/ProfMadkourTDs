@@ -93,11 +93,11 @@ classent parmi ceux qui ont validé ou ceux qui n’ont pas validé le semestre.
 obtenue comme suit :
 
 <ul>
-    <li style="padding-left:50px;"><strong>Passable</strong> (10 ≤ 𝑛𝑜𝑡𝑒 < 12)</li>
-    <li style="padding-left:50px;"><strong>Assez bien</strong> (12 ≤ 𝑛𝑜𝑡𝑒 < 14)</li>
-    <li style="padding-left:50px;"><strong>Bien</strong> (14 ≤ 𝑛𝑜𝑡𝑒 < 16)</li>
-    <li style="padding-left:50px;"><strong>Très bien</strong> (16 ≤ 𝑛𝑜𝑡𝑒 < 18)</li>
-    <li style="padding-left:50px;"><strong>Excellent</strong> (18 ≤ 𝑛𝑜𝑡𝑒)</li>
+    <li><strong>Passable</strong> (10 ≤ 𝑛𝑜𝑡𝑒 < 12)</li>
+    <li><strong>Assez bien</strong> (12 ≤ 𝑛𝑜𝑡𝑒 < 14)</li>
+    <li><strong>Bien</strong> (14 ≤ 𝑛𝑜𝑡𝑒 < 16)</li>
+    <li><strong>Très bien</strong> (16 ≤ 𝑛𝑜𝑡𝑒 < 18)</li>
+    <li><strong>Excellent</strong> (18 ≤ 𝑛𝑜𝑡𝑒)</li>
 </ul>
 
 ## Un exercice à préparer pour la POO
