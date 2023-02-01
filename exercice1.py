@@ -5,35 +5,12 @@ def generator(numberOfStudent, minimum= 0, maximum=20):
     np.random.seed(0)
     return np.random.randint(minimum, maximum, size=numberOfStudent, dtype=int)
 
-def remarque(note):
-    if note < 10:
-        return 'Non Valide'
-    elif note < 12:
-        return 'Passable'
-    elif note < 14:
-        return 'Assez Bien'
-    elif note < 16:
-        return 'Bien'
-    elif note < 18:
-        return 'Très Bien'
-    else:
-        return 'Excellent'
-
-def compterOccurrence(list):
-    counts = {}
-    for item in list:
-        if item[1] not in counts:
-            counts[item[1]] = 1
-        else:
-            counts[item[1]] += 1
-    return counts
-
 def valider(notes):
     valide = []
     nonValide = []
     for note in notes:
         if note >= 10:
-            valide.append((note,remarque(note)))
+            valide.append((note))
         else:
             nonValide.append(note)
     return valide,nonValide
@@ -46,7 +23,5 @@ print("--------------------------------")
 print(notes)
 print("--------------------------------")
 print("Valide =" , valide)
-print("-----------------")
-print(compterOccurrence(valide))
 print("--------------------------------")
 print("Non Valide = " ,nonValide)
