@@ -77,8 +77,7 @@ $$\beta_2 = \frac{1}{n}\sum n_i \left( \frac{x_i -\bar{x}}{\sigma} \right)^4$$
 Créer une fonction « resultats » qui simule les moyennes générales obtenues par les étudiants fictifs d'une
 classe et qui retourne les mentions de ceux qui ont validé le semestre. On suppose que les moyennes générales
 sont des nombres entiers compris entre 0 et 20.
-La fonction « resultats » a un seul paramètre: le nombre d'étudiants à simuler (que l’on notera « nombre »), et
-retourne un dictionnaire « mentions » associant à chaque étudiant sa mention.
+La fonction « resultats » a un seul paramètre: le nombre d'étudiants à simuler (que l’on notera « nombre »), et retourne un dictionnaire « mentions » associant à chaque étudiant sa mention.
 Voici quelques consignes à respecter :
 
 - Importer le module numpy : import numpy as np
@@ -103,5 +102,5 @@ o **Très bien (16 ≤ 𝑛𝑜𝑡𝑒 < 18)**
 o **Excellent (18 ≤ 𝑛𝑜𝑡𝑒)**
 
 ## Un exercice à préparer pour la POO
-Une agence de location de véhicules loue 2 types de véhicules : des citadines pour le transport de personnes et des utilitaires pour le transport de marchandises. Les véhicules sont caractérisés par une marque, un modèle et un numéro d’immatriculation. Ils au diesel ou à l’essence, et doivent être entretenus tous les 10.000 km et mis au rebut au bout de 200.000km. 
+Une agence de location de véhicules loue 2 types de véhicules : des citadines pour le transport de personnes et des utilitaires pour le transport de marchandises. Les véhicules sont caractérisés par une marque, un modèle et un numéro d’immatriculation. Ils au diesel ou à l’essence, et doivent être entretenus tous les 10.000 km et mis au rebut au bout de 200.000km.
 Votre mission est de concevoir un code Python pour le suivi de l’état de ces véhicules.

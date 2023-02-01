@@ -1,4 +1,4 @@
-def mentions(number):
+def resultats(number):
     import numpy as np
     np.random.seed(0)
 
@@ -23,6 +23,6 @@ def mentions(number):
         elif favorable[student] >= 18:
             mentions[student] = 'Excellent'
     return mentions
-les_mentions = mentions(40)
+les_mentions = resultats(40)
 
 print(f'La liste des mentions des étudiants : {les_mentions}')
