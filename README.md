@@ -72,7 +72,7 @@ $$\beta_2 = \frac{1}{n}\sum n_i \left( \frac{x_i -\bar{x}}{\sigma} \right)^4$$
 - Si $\beta_2> 3$: distribution leptokurtique (moins aplatie que la normale).
 - Si $\\beta_2 < 3$: distribution platykurtique (plus aplatie que la normale).
 
-## Les Mentions des étudient
+## Les Mentions des étudients
 
 Créer une fonction « resultats » qui simule les moyennes générales obtenues par les étudiants fictifs d'une
 classe et qui retourne les mentions de ceux qui ont validé le semestre. On suppose que les moyennes générales
@@ -91,6 +91,7 @@ classent parmi ceux qui ont validé ou ceux qui n’ont pas validé le semestre.
 - Créer le dictionnaire « mentions » qui attribue à chaque étudiant ayant validé le semestre la mention
 
 obtenue comme suit :
+
 o Passable (10 ≤ 𝑛𝑜𝑡𝑒 < 12)
 o Assez bien (12 ≤ 𝑛𝑜𝑡𝑒 < 14)
 o Bien (14 ≤ 𝑛𝑜𝑡𝑒 < 16)
