@@ -81,26 +81,26 @@ sont des nombres entiers compris entre 0 et 20.
 La fonction « resultats » a un seul paramètre: le nombre d'étudiants à simuler (que l’on notera « nombre »), et retourne un dictionnaire « mentions » associant à chaque étudiant sa mention.
 Voici quelques consignes à respecter :
 
-- Importer le module numpy : import numpy as np
-- Fixer la graine du générateur des nombres aléatoires à 0 : np.random.seed(0)
-- Simuler les notes : np.random.randint(low=0, high=20, size=nombre, dtype=int)
-- Stocker les notes dans une liste « notes »
-- Créer la liste des étudiants : etudiants =[ etudiant_1, etudiant_2, etudiant_3,…]
-- Créer les dictionnaires « favorables » et « defavorables » qui associent à chaque étudiant sa note et le
+- Importer le module numpy : **import numpy as np**
+- Fixer la graine du générateur des nombres aléatoires à 0 : **np.random.seed(0)**
+- Simuler les notes : **np.random.randint(low=0, high=20, size=nombre, dtype=int)**
+- Stocker les notes dans une liste **« notes »**
+- Créer la liste des étudiants : **etudiants =[ etudiant_1, etudiant_2, etudiant_3,…]**
+- Créer les dictionnaires **« favorables »** et **« defavorables »** qui associent à chaque étudiant sa note et le
 classent parmi ceux qui ont validé ou ceux qui n’ont pas validé le semestre.
-- Créer le dictionnaire « mentions » qui attribue à chaque étudiant ayant validé le semestre la mention
+- Créer le dictionnaire **« mentions »** qui attribue à chaque étudiant ayant validé le semestre la mention
 
 obtenue comme suit :
 
-o **Passable (10 ≤ 𝑛𝑜𝑡𝑒 < 12)**
+o   **Passable (10 ≤ 𝑛𝑜𝑡𝑒 < 12)**
 
-o **Assez bien (12 ≤ 𝑛𝑜𝑡𝑒 < 14)**
+o   **Assez bien (12 ≤ 𝑛𝑜𝑡𝑒 < 14)**
 
-o **Bien (14 ≤ 𝑛𝑜𝑡𝑒 < 16)**
+o   **Bien (14 ≤ 𝑛𝑜𝑡𝑒 < 16)**
 
-o **Très bien (16 ≤ 𝑛𝑜𝑡𝑒 < 18)**
+o   **Très bien (16 ≤ 𝑛𝑜𝑡𝑒 < 18)**
 
-o **Excellent (18 ≤ 𝑛𝑜𝑡𝑒)**
+o   **Excellent (18 ≤ 𝑛𝑜𝑡𝑒)**
 
 ## Un exercice à préparer pour la POO
 Une agence de location de véhicules loue 2 types de véhicules : des citadines pour le transport de personnes et des utilitaires pour le transport de marchandises. Les véhicules sont caractérisés par une marque, un modèle et un numéro d’immatriculation. Ils au diesel ou à l’essence, et doivent être entretenus tous les 10.000 km et mis au rebut au bout de 200.000km.
