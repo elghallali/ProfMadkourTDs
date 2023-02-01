@@ -114,7 +114,7 @@ Votre mission est de concevoir un code Python pour le suivi de l’état de ces
         +modele : string
         +numImmatriculation : string
         +combustible = diesel : string
-        entrer(): void
-        misRebut(): void
+        entrer()
+        misRebut()
     }
 ```
