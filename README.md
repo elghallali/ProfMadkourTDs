@@ -8,9 +8,9 @@
 2. Etablir la liste des notes supérieures ou égales à 10 (notes des étudiants ayant validé le mdule) et la liste des notes strictement inférieures à 10 (notes des étudiants n'ayant pas validé le module)
 #### **Etape 1:** Générer des nombres aléatoires:
 
-1. On importe le module numpy: import numpy as np
+1. On importe le module numpy: **`import numpy as np`**
 
-2. On fixe la valeur de la graine (à 0 par exemple): np.random.seed(0)
+2. On fixe la valeur de la graine (à 0 par exemple): **`np.random.seed(0)`**
 
 3. Utiliser la fonction randint pour générer des nombres aléatoires ( [cliquer ici pour accéder à la documentation](https://numpy.org/doc/stable/reference/random/generated/numpy.random.randint.html#numpy-random-randint/) )
 
@@ -102,16 +102,16 @@ obtenue comme suit :
 
 ## Un exercice à préparer pour la POO
 
-Une agence de location de véhicules loue 2 types de véhicules : des citadines pour le transport de personnes et des utilitaires pour le transport de marchandises. Les véhicules sont caractérisés par une marque, un modèle et un numéro d’immatriculation. Ils au diesel ou à l’essence, et doivent être entretenus tous les 10.000 km et mis au rebut au bout de 200.000km.
+Une agence de location de véhicules loue 2 types de véhicules : des citadines pour le transport de personnes et des utilitaires pour le transport de marchandises. Les véhicules sont caractérisés par `une marque`, `un modèle` et `un numéro d’immatriculation`. Ils `au diesel` ou `à l’essence`, et `doivent être entretenus tous les 10.000 km` et `mis au rebut au bout de 200.000km`.
 Votre mission est de concevoir un code Python pour le suivi de l’état de ces véhicules.
 
 ```mermaid
 classDiagram
     class Vehicule{
-        +marque: string
-        +modele : string
-        +numImmatriculation : string
-        +combustible = diesel : string
+        marque: string
+        modele : string
+        numImmatriculation : string
+        combustible = diesel : string
         entretenus(): void
         misRebut(): void
     }
