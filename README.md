@@ -81,14 +81,14 @@ sont des nombres entiers compris entre 0 et 20.
 La fonction « resultats » a un seul paramètre: le nombre d'étudiants à simuler (que l’on notera « nombre »), et retourne un dictionnaire « mentions » associant à chaque étudiant sa mention.
 Voici quelques consignes à respecter :
 
-- Importer le module numpy : **import numpy as np**
-- Fixer la graine du générateur des nombres aléatoires à 0 : **np.random.seed(0)**
-- Simuler les notes : **np.random.randint(low=0, high=20, size=nombre, dtype=int)**
-- Stocker les notes dans une liste **« notes »**
-- Créer la liste des étudiants : **etudiants =[ etudiant_1, etudiant_2, etudiant_3,…]**
-- Créer les dictionnaires **« favorables »** et **« defavorables »** qui associent à chaque étudiant sa note et le
+- Importer le module numpy : **`import numpy as np`**
+- Fixer la graine du générateur des nombres aléatoires à 0 : **`np.random.seed(0)`**
+- Simuler les notes : **`np.random.randint(low=0, high=20, size=nombre, dtype=int)`**
+- Stocker les notes dans une liste **`notes`**
+- Créer la liste des étudiants : **`etudiants =[ etudiant_1, etudiant_2, etudiant_3,…]`**
+- Créer les dictionnaires **`favorables`** et **`defavorables`** qui associent à chaque étudiant sa note et le
 classent parmi ceux qui ont validé ou ceux qui n’ont pas validé le semestre.
-- Créer le dictionnaire **« mentions »** qui attribue à chaque étudiant ayant validé le semestre la mention
+- Créer le dictionnaire **`mentions`** qui attribue à chaque étudiant ayant validé le semestre la mention
 
 obtenue comme suit :
 
