@@ -108,7 +108,7 @@ Une agence de location de véhicules loue 2 types de véhicules : des citadines 
 Votre mission est de concevoir un code Python pour le suivi de l’état de ces véhicules.
 
 ```mermaid
-
+classDiagram
     class Vehicule{
         +marque: string
         +modele : string
