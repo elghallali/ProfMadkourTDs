@@ -92,15 +92,15 @@ classent parmi ceux qui ont validé ou ceux qui n’ont pas validé le semestre.
 
 obtenue comme suit :
 
-o   **Passable (10 ≤ 𝑛𝑜𝑡𝑒 < 12)**
+o   **Passable** (10 ≤ 𝑛𝑜𝑡𝑒 < 12)
 
-o   **Assez bien (12 ≤ 𝑛𝑜𝑡𝑒 < 14)**
+o   **Assez bien** (12 ≤ 𝑛𝑜𝑡𝑒 < 14)
 
-o   **Bien (14 ≤ 𝑛𝑜𝑡𝑒 < 16)**
+o   **Bien** (14 ≤ 𝑛𝑜𝑡𝑒 < 16)
 
-o   **Très bien (16 ≤ 𝑛𝑜𝑡𝑒 < 18)**
+o   **Très bien** (16 ≤ 𝑛𝑜𝑡𝑒 < 18)
 
-o   **Excellent (18 ≤ 𝑛𝑜𝑡𝑒)**
+o   **Excellent** (18 ≤ 𝑛𝑜𝑡𝑒)
 
 ## Un exercice à préparer pour la POO
 Une agence de location de véhicules loue 2 types de véhicules : des citadines pour le transport de personnes et des utilitaires pour le transport de marchandises. Les véhicules sont caractérisés par une marque, un modèle et un numéro d’immatriculation. Ils au diesel ou à l’essence, et doivent être entretenus tous les 10.000 km et mis au rebut au bout de 200.000km.
