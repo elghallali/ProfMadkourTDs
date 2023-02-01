@@ -117,6 +117,6 @@ classDiagram
         entrer()
         misRebut()
     }
-    TransportPersonnel --|> Vehicule
-    TransportMarchandise --|> Vehicule
+    Vehicule <|-- TransportPersonnel
+    Vehicule <|-- TransportMarchandise
 ```
